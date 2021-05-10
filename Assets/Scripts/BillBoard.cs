@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class BillBoard : MonoBehaviour
 {
-    
-
     // Update is called once per frame
     void Update()
     {
-        transform.forward = GameObject.Find("Main camera").GetComponent<Camera>().transform.forward;
+        transform.forward = GameObject.Find("Camera").GetComponent<Camera>().transform.forward;
     }
 }

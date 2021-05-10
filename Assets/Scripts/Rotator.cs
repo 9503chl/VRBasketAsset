@@ -15,15 +15,15 @@ public class Rotator : MonoBehaviour
         if(fStart == true)
         {
             fStart = false;
-            x1 = Random.Range(-17.0f, -9.0f);
-            z1 = Random.Range(5.5f, 7f);
+            x1 = Random.Range(-15.0f, -10.0f);
+            z1 = Random.Range(6.0f, 7.0f);
             transform.position = new Vector3(x1, 2.01f, z1);
         }
         RunTime -= Time.deltaTime;
         if(RunTime <= 0.0f)
         {
-            x1 = Random.Range(-17.0f, -9.0f);
-            z1 = Random.Range(5.5f, 7f);
+            x1 = Random.Range(-15.0f, -10.0f);
+            z1 = Random.Range(6.0f, 7.0f);
             transform.position = new Vector3(x1, 2.01f, z1);
             RunTime = rTime;
         }
