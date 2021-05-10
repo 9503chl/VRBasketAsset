@@ -5,6 +5,7 @@ using UnityEngine;
 public class Goal : MonoBehaviour
 {
     [SerializeField] int point = 2;
+    [SerializeField] GameObject popupTextPrefab;
     Score score;
     void Start()
     {
@@ -14,5 +15,11 @@ public class Goal : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         score.AddScore(point);
+    }
+    void CreatePopupText()
+    {
+        var text = Instantiate(popupTextPrefab, transform.position, Quaternion.identity);
+
+        text.GetComponent<TextMesh>().text = string.Format("2µÊ¡°", point);
     }
 }
