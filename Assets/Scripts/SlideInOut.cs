@@ -15,6 +15,6 @@ public class SlideInOut : MonoBehaviour
 
         sequence.Append(rectTranform.DOMoveX(0.0f, 1.0f));
 
-        sequence.Append(rectTranform.DOMoveX(-1400.0f, 0.8f)); //왼쪽끝으로 사라져~
+        sequence.Append(rectTranform.DOMoveX(-1400.0f, 0.8f)); //왼쪽끝으로 사라짐
     }
 }
