@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class ball : MonoBehaviour
 {
-    [SerializeField] float speed = 5f;
+    [SerializeField] float speed = 7f;
     void Start()
     {
         var velocity = speed * transform.forward;
