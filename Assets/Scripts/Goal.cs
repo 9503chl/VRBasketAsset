@@ -6,6 +6,7 @@ public class Goal : MonoBehaviour
 {
     [SerializeField] int point = 2;
     [SerializeField] GameObject popupTextPrefab;
+    [SerializeField] AudioSource GoalAudioSource;
     Score score;
     void Start()
     {
@@ -15,6 +16,7 @@ public class Goal : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         score.AddScore(point);
+        GoalAudioSource.Play();
         CreatePopupText();
     }
     void CreatePopupText()

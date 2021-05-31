@@ -11,6 +11,9 @@ public class GameStateController : MonoBehaviour
     [SerializeField] GameObject result;     // Result 게임 오브젝트 참조
     [SerializeField] GameObject player;     // PlayerGun 게임 오브젝트 참조
     [SerializeField] GameObject GoalDae;
+    [SerializeField] AudioSource ReadyAudioSource;
+    [SerializeField] AudioSource GamePlayAudioSource;
+    [SerializeField] AudioSource GameOverAudioSource;
     // 스테이트 베이스 클래스
     abstract class BaseState
     {
@@ -41,6 +44,7 @@ public class GameStateController : MonoBehaviour
             Controller.gameReady.SetActive(true);
             Controller.player.SetActive(false);
             Controller.GoalDae.SetActive(false);
+            Controller.ReadyAudioSource.Play();
         }
         public override StateAction OnUpdate()
         {
@@ -101,6 +105,11 @@ public class GameStateController : MonoBehaviour
     class PlayingState : BaseState
     {
         public PlayingState(GameStateController c) : base(c) { }
+        public override void OnEnter()
+        {
+            Controller.GamePlayAudioSource.Play();
+        }
+
         public override StateAction OnUpdate()
         {
             // 타이머가 종료하면 게임 오버
@@ -117,6 +126,7 @@ public class GameStateController : MonoBehaviour
         {
             // 플레이어를 숨김
             Controller.player.SetActive(false);
+            Controller.GamePlayAudioSource.Stop();
         }
     }
 
@@ -130,6 +140,7 @@ public class GameStateController : MonoBehaviour
             // 게임 오버를 표시
             Controller.gameOver.SetActive(true);
             Controller.GoalDae.SetActive(false);
+            Controller.GameOverAudioSource.Play();
         }
         public override StateAction OnUpdate()
         {
