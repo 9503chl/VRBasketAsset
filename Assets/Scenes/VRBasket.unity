@@ -1199,7 +1199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c420539c4ed7fb8478fda7410ca698cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameTime: 30
+  gameTime: 15
 --- !u!114 &571525068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1953,6 +1953,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   angularVelocity: 50
+--- !u!1 &1027686805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1979895103091518679, guid: f697a51d8dcc463408d9de61821e3788,
+    type: 3}
+  m_PrefabInstance: {fileID: 5028082466432957166}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1027686811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1027686805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 272dad9e51a83c74f97d34ac88f35622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoalDaeAudioSource: {fileID: 0}
 --- !u!1 &1043756929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7541609335329569374, guid: f697a51d8dcc463408d9de61821e3788,
