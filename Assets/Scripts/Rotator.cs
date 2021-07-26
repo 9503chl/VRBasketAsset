@@ -5,11 +5,10 @@ using UnityEngine;
 public class Rotator : MonoBehaviour
 {
     [SerializeField] static float rTime = 5.2f;
-    float RunTime = rTime;
-    float x1 = 0.0f;
-    float z1 = 0.0f;
+    public float RunTime = rTime;
+    public float x1 = 0.0f;
+    public float z1 = 0.0f;
     static bool fStart = true;
-    // Update is called once per frame
     void Update()
     {
         if(fStart == true)
