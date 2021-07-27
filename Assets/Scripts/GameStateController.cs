@@ -12,9 +12,11 @@ public class GameStateController : MonoBehaviour
     [SerializeField] GameObject player;     // PlayerGun 게임 오브젝트 참조
     [SerializeField] GameObject GoalDae;
     [SerializeField] GameObject Rim;
+    [SerializeField] GameObject ThreeptsAlarm;
     [SerializeField] AudioSource ReadyAudioSource;
     [SerializeField] AudioSource GamePlayAudioSource;
     [SerializeField] AudioSource GameOverAudioSource;
+
     // 스테이트 베이스 클래스
     abstract class BaseState
     {
@@ -46,6 +48,7 @@ public class GameStateController : MonoBehaviour
             Controller.player.SetActive(false);
             Controller.GoalDae.SetActive(false);
             Controller.Rim.SetActive(false);
+            Controller.ThreeptsAlarm.SetActive(false);
             Controller.ReadyAudioSource.Play();
         }
         public override StateAction OnUpdate()
@@ -78,7 +81,6 @@ public class GameStateController : MonoBehaviour
             Controller.player.SetActive(true);
             Controller.GoalDae.SetActive(true);
             Controller.Rim.SetActive(true);
-
             // start 문자열을 표시
             Controller.gameStart.SetActive(true);
 
@@ -107,6 +109,7 @@ public class GameStateController : MonoBehaviour
     // 게임 중 스테이트
     class PlayingState : BaseState
     {
+        float timer;
         public PlayingState(GameStateController c) : base(c) { }
         public override void OnEnter()
         {
@@ -115,12 +118,17 @@ public class GameStateController : MonoBehaviour
 
         public override StateAction OnUpdate()
         {
+            timer += Time.deltaTime;
             // 타이머가 종료하면 게임 오버
             if (!Controller.timer.IsCountingDown())
             {
                 return StateAction.
                   
              STATE_ACTION_NEXT;
+            }
+            if(timer >= 43.5f)
+            {
+                Controller.ThreeptsAlarm.SetActive(true);
             }
             return StateAction.STATE_ACTION_WAIT;
         }
@@ -144,6 +152,7 @@ public class GameStateController : MonoBehaviour
             Controller.gameOver.SetActive(true);
             Controller.GoalDae.SetActive(false);
             Controller.Rim.SetActive(false);
+            Controller.ThreeptsAlarm.SetActive(false);
             Controller.GameOverAudioSource.Play();
         }
         public override StateAction OnUpdate()
@@ -191,7 +200,6 @@ public class GameStateController : MonoBehaviour
             new GameOverState(this),
             new ResultState(this),
         };
-
         // 처음 상태의 시작 처리
         state[currentState].OnEnter();
     }

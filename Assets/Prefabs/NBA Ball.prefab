@@ -79,7 +79,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BallAudioSource: {fileID: 8311104752229425125}
-  speed: 6.5
+  speed: 7
 --- !u!82 &8311104752229425125
 AudioSource:
   m_ObjectHideFlags: 0

@@ -6,9 +6,9 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Text))]
 public class RemainTimer : MonoBehaviour
 {
-    [SerializeField] float gameTime = 30.0f;
+    [SerializeField] float gameTime = 60.0f;
     Text uiText;
-    float currentTime;
+    public float currentTime;
 
     void Start()
     {
