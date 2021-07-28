@@ -11,6 +11,7 @@ public class Goal : MonoBehaviour
     [SerializeField] AudioSource ThreeptsGoalAudioSource;
     Score score;
     float iTime = 60.0f;
+    float delay = 0.5f;
     void Start()
     {
         var gameObj = GameObject.FindWithTag("Score");
@@ -19,18 +20,21 @@ public class Goal : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        score.AddScore(point,iTime);
+        if (delay >= 0.5f) {
+            score.AddScore(point, iTime);
 
-        if (iTime <= 15.0f)
-        {
-            ThreeptsGoalAudioSource.Play();
-        }
-        else
-        {
-            GoalAudioSource.Play();
-        }
+            if (iTime <= 15.0f)
+            {
+                ThreeptsGoalAudioSource.Play();
+            }
+            else
+            {
+                GoalAudioSource.Play();
+            }
 
-        CreatePopupText();
+            CreatePopupText();
+            delay = 0.0f;
+        }
     }
 
     void CreatePopupText()
@@ -48,5 +52,6 @@ public class Goal : MonoBehaviour
     void Update()
     {
         iTime -= Time.deltaTime;
+        delay += Time.deltaTime;
     }
 }

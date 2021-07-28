@@ -110,7 +110,7 @@ public class GameStateController : MonoBehaviour
     // 게임 중 스테이트
     class PlayingState : BaseState
     {
-        float timer;
+        float timer; bool truth = true;
         public PlayingState(GameStateController c) : base(c) { }
         public override void OnEnter()
         {
@@ -127,10 +127,11 @@ public class GameStateController : MonoBehaviour
                   
              STATE_ACTION_NEXT;
             }
-            if(timer >= 43.7f)
+            if(timer >= 43.7f && truth)
             {
                 Controller.ThreeptsAlarm.SetActive(true);
-                Controller.ThreeptsAudioSource.Play(); //왜 안되냐
+                Controller.ThreeptsAudioSource.Play();
+                truth = false;
             }
             return StateAction.STATE_ACTION_WAIT;
         }
@@ -139,6 +140,7 @@ public class GameStateController : MonoBehaviour
         {
             // 플레이어를 숨김
             Controller.player.SetActive(false);
+            Controller.ThreeptsAlarm.SetActive(false);
             Controller.GamePlayAudioSource.Stop();
         }
     }
