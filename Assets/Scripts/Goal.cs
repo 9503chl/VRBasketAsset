@@ -10,16 +10,18 @@ public class Goal : MonoBehaviour
     [SerializeField] GameObject ThreeptspopupTextPrefab;
     [SerializeField] AudioSource ThreeptsGoalAudioSource;
     Score score;
-    float iTime;
+    float iTime = 60.0f;
     void Start()
     {
         var gameObj = GameObject.FindWithTag("Score");
         score = gameObj.GetComponent<Score>();
     }
+
     void OnTriggerEnter(Collider other)
     {
-        score.AddScore(point);
-        if(iTime <= 15.0f)
+        score.AddScore(point,iTime);
+
+        if (iTime <= 15.0f)
         {
             ThreeptsGoalAudioSource.Play();
         }
@@ -27,8 +29,10 @@ public class Goal : MonoBehaviour
         {
             GoalAudioSource.Play();
         }
+
         CreatePopupText();
     }
+
     void CreatePopupText()
     {
         if (iTime <= 15.0f)
@@ -43,6 +47,6 @@ public class Goal : MonoBehaviour
     }
     void Update()
     {
-        iTime = GameObject.Find("Canvas").GetComponent<RemainTimer>().currentTime;
+        iTime -= Time.deltaTime;
     }
 }

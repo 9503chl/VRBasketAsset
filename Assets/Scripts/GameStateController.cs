@@ -16,6 +16,7 @@ public class GameStateController : MonoBehaviour
     [SerializeField] AudioSource ReadyAudioSource;
     [SerializeField] AudioSource GamePlayAudioSource;
     [SerializeField] AudioSource GameOverAudioSource;
+    [SerializeField] AudioSource ThreeptsAudioSource;
 
     // 스테이트 베이스 클래스
     abstract class BaseState
@@ -126,9 +127,10 @@ public class GameStateController : MonoBehaviour
                   
              STATE_ACTION_NEXT;
             }
-            if(timer >= 43.5f)
+            if(timer >= 43.7f)
             {
                 Controller.ThreeptsAlarm.SetActive(true);
+                Controller.ThreeptsAudioSource.Play(); //왜 안되냐
             }
             return StateAction.STATE_ACTION_WAIT;
         }
