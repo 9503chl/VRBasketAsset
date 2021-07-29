@@ -19,12 +19,12 @@ public class Score : MonoBehaviour
         if (aTime <= 15.0f)
         {
             Points += addPoint + 1;
-            uiText.text = string.Format("점수 : {0:D2}점", Points);
+            uiText.text = string.Format("점수 : {0:D3}점", Points);
         }
         else
         {
             Points += addPoint;
-            uiText.text = string.Format("점수 : {0:D2}점", Points);
+            uiText.text = string.Format("점수 : {0:D3}점", Points);
         }
     }
 }

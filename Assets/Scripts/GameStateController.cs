@@ -7,16 +7,18 @@ public class GameStateController : MonoBehaviour
     [SerializeField] GameObject gameReady;  // GameReady 게임 오브젝트 참조
     [SerializeField] RemainTimer timer;     // RemainTimer 컴포넌트 참조
     [SerializeField] GameObject gameStart;  // GameStart 게임 오브젝트 참조
-    [SerializeField] GameObject gameOver;   // GameOver 게임 오브젝트 참조
+    [SerializeField] GameObject gameOver; // GameOver 게임 오브젝트 참조 
     [SerializeField] GameObject result;     // Result 게임 오브젝트 참조
     [SerializeField] GameObject player;     // PlayerGun 게임 오브젝트 참조
     [SerializeField] GameObject GoalDae;
     [SerializeField] GameObject Rim;
     [SerializeField] GameObject ThreeptsAlarm;
+    [SerializeField] GameObject NextStage;
     [SerializeField] AudioSource ReadyAudioSource;
     [SerializeField] AudioSource GamePlayAudioSource;
     [SerializeField] AudioSource GameOverAudioSource;
     [SerializeField] AudioSource ThreeptsAudioSource;
+
 
     // 스테이트 베이스 클래스
     abstract class BaseState
@@ -184,6 +186,11 @@ public class GameStateController : MonoBehaviour
         {
             // 결과 표시
             Controller.result.SetActive(true);
+            float Total = GameObject.Find("Score").GetComponent<Score>().Points;
+            if(Total >= 20.0f)
+            {
+                Controller.NextStage.SetActive(true);
+            }
         }
         public override StateAction OnUpdate() { return StateAction.STATE_ACTION_WAIT; }
     }
