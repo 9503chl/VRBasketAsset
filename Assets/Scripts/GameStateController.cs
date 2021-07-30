@@ -12,9 +12,7 @@ public class GameStateController : MonoBehaviour
     [SerializeField] GameObject player;     // PlayerGun 게임 오브젝트 참조
     [SerializeField] GameObject GoalDae;
     [SerializeField] GameObject Rim;
-    [SerializeField] GameObject Enemy;
-    [SerializeField] GameObject Enemy1;
-    [SerializeField] GameObject Enemy2;
+    [SerializeField] GameObject Defender;
     [SerializeField] GameObject ThreeptsAlarm;
     [SerializeField] GameObject NextStage;
     [SerializeField] AudioSource ReadyAudioSource;
@@ -87,9 +85,7 @@ public class GameStateController : MonoBehaviour
             Controller.player.SetActive(true);
             Controller.GoalDae.SetActive(true);
             Controller.Rim.SetActive(true);
-            Controller.Enemy.SetActive(true);
-            Controller.Enemy1.SetActive(true);
-            Controller.Enemy2.SetActive(true);
+            Controller.Defender.SetActive(true);
             // start 문자열을 표시
             Controller.gameStart.SetActive(true);
 
@@ -165,9 +161,7 @@ public class GameStateController : MonoBehaviour
             Controller.GoalDae.SetActive(false);
             Controller.Rim.SetActive(false);
             Controller.ThreeptsAlarm.SetActive(false);
-            Controller.Enemy.SetActive(false);
-            Controller.Enemy1.SetActive(false);
-            Controller.Enemy2.SetActive(false);
+            Controller.Defender.SetActive(false);
             Controller.GameOverAudioSource.Play();
         }
         public override StateAction OnUpdate()
