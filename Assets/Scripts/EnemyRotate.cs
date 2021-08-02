@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyRotate : MonoBehaviour
 {
-    float time = 0.0f;
+    float time = 2.0f;
     float x1;
     Vector3 movement;
     Vector3 position;
@@ -17,13 +17,18 @@ public class EnemyRotate : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.forward * 0.002f); //가는방향
-        time += Time.deltaTime;
+        transform.Translate(Vector3.forward * 0.0085f); //가는방향
+        time -= Time.deltaTime;
         transform.LookAt(targetTransform);
-        if (time >= 2.0f)
+        float eDistance = (targetTransform.position - transform.position).sqrMagnitude;
+        if(eDistance  > 50.0f)
         {
-            rigid.AddForce(Vector3.up , ForceMode.Impulse);
-            time = 0.0f;
+            transform.position = new Vector3(Random.Range(-3.0f, -1.0f), 1.0f, -3.0f);
+        }
+        if (time <= 0.0f)
+        {
+            rigid.AddForce(Vector3.up * 400.0f , ForceMode.Impulse);
+            time = Random.Range(0.0f, 3.0f);
         }
     }
 }
