@@ -21,7 +21,7 @@ public class EnemyRotate : MonoBehaviour
         time -= Time.deltaTime;
         transform.LookAt(targetTransform);
         float eDistance = (targetTransform.position - transform.position).sqrMagnitude;
-        if(eDistance  > 50.0f)
+        if(eDistance  > 60.0f)
         {
             transform.position = new Vector3(Random.Range(-3.0f, -1.0f), 1.0f, -3.0f);
         }

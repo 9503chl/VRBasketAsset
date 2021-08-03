@@ -34,7 +34,7 @@ public class RimRotator : MonoBehaviour
             time1 += Time.deltaTime;
             if (time1 <= 1.5f)
             {
-                transform.Translate(Vector3.right* 0.3f * Time.deltaTime);
+                transform.Translate(Vector3.right* 0.3f * Time.deltaTime); 
             }
             else if (time1 >= 1.5f)
             {
