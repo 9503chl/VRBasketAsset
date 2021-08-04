@@ -30,7 +30,7 @@ public class Rotator : MonoBehaviour
             RunTime = rTime;
         }
         float eDistance = (targetPoint.position - transform.position).sqrMagnitude;
-        if(eDistance >= 30.0f) //멀어지면 다시 제자리
+        if(eDistance >= 200.0f || eDistance <= 20.0f) //멀어지면 다시 제자리
         {
             transform.position = new Vector3(-12.8f, 2.01f, 6.0f); 
         }

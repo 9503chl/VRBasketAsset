@@ -5,13 +5,13 @@ using UnityEngine;
 public class ButtonWait : MonoBehaviour
 {
     float time = 2.0f;
-
+    public GameObject button1;
     void Update()
     {
         time -= Time.deltaTime;
         if(time <= 0.0f)
         {
-            gameObject.SetActive(false);
+            button1.gameObject.SetActive(true);
         }
     }
 }
