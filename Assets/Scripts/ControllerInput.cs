@@ -4,17 +4,27 @@ using UnityEngine;
 
 public class ControllerInput : MonoBehaviour
 {
-    public GameObject button1;
-    public GameObject button2;
+    public int speedForward = 12;
+
+    public GameObject ShootingBall;
+    public Transform firePos;
+
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
+        {
+            ShootBall();
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            ShootBall();
+        }
+    }
+    void ShootBall()
+    {
+        Instantiate(ShootingBall, firePos.position, firePos.rotation);
     }
 }
