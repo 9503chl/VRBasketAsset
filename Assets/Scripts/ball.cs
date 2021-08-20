@@ -6,7 +6,7 @@ using UnityEngine;
 public class ball : MonoBehaviour
 {
     [SerializeField] AudioSource BallAudioSource;
-    [SerializeField] float speed = 7f;
+    [SerializeField] float speed = 6f;
     void Start()
     {
         var velocity = speed * transform.forward;

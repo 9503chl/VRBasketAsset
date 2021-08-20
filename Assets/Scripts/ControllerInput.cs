@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ControllerInput : MonoBehaviour
 {
-    public int speedForward = 12;
 
     public GameObject ShootingBall;
     public Transform firePos;
