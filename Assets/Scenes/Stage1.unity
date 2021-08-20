@@ -121,36 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &1394123
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1394124}
-  m_Layer: 0
-  m_Name: FakeEnemy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1394124
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1394123}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3469821, y: 1.0851896, z: 2.5635471}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &11608966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -330,6 +300,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3b66b9c95a8c39439b9a8a76c02cdfe, type: 3}
+--- !u!1 &19663894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4817861601051545878, guid: f3b66b9c95a8c39439b9a8a76c02cdfe,
+    type: 3}
+  m_PrefabInstance: {fileID: 11608966}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &20382672
 GameObject:
   m_ObjectHideFlags: 0
@@ -3845,7 +3821,7 @@ PrefabInstance:
     - target: {fileID: 7954279036689264606, guid: b52488b67e779c045909d86642c0d371,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.11
+      value: 0.834
       objectReference: {fileID: 0}
     - target: {fileID: 7954279036689264606, guid: b52488b67e779c045909d86642c0d371,
         type: 3}
@@ -4313,7 +4289,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Defender
       value: 
-      objectReference: {fileID: 1394123}
+      objectReference: {fileID: 0}
     - target: {fileID: 5357067609286330480, guid: c32bea82dabb8ab468befbc6f2435ad5,
         type: 3}
       propertyPath: gameOver
@@ -4340,6 +4316,11 @@ PrefabInstance:
       propertyPath: gameStart
       value: 
       objectReference: {fileID: 1226592393}
+    - target: {fileID: 5357067609286330480, guid: c32bea82dabb8ab468befbc6f2435ad5,
+        type: 3}
+      propertyPath: GController
+      value: 
+      objectReference: {fileID: 19663894}
     - target: {fileID: 5357067609286330480, guid: c32bea82dabb8ab468befbc6f2435ad5,
         type: 3}
       propertyPath: ThreeptsAlarm
