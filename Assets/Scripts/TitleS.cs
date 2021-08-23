@@ -9,12 +9,12 @@ public class TitleS : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(this.gameObject.name == "StartGame")
+        if(this.gameObject.name == "TouchPoint1")
         {
             TitleSound.Play();
             Invoke("StartG", 0.5f);
         }
-        if (this.gameObject.name == "Quit")
+        if (this.gameObject.name == "TouchPoint2")
         {
             TitleSound.Play();
             Invoke("QuitG", 0.5f);

@@ -11,6 +11,7 @@ public class GameStateController : MonoBehaviour
     [SerializeField] GameObject result;     // Result 게임 오브젝트 참조
     [SerializeField] GameObject player;     // PlayerGun 게임 오브젝트 참조
     [SerializeField] GameObject GoalDae;
+    [SerializeField] GameObject Button;
     [SerializeField] GameObject GController;
     [SerializeField] GameObject ShootBall;
     [SerializeField] GameObject Rim;
@@ -56,7 +57,9 @@ public class GameStateController : MonoBehaviour
             Controller.Rim.SetActive(false);
             Controller.ThreeptsAlarm.SetActive(false);
             Controller.ReadyAudioSource.Play();
+            Controller.ShootBall.SetActive(false);
             Controller.GController.SetActive(false);
+            Controller.Button.SetActive(false);
         }
         public override StateAction OnUpdate()
         {
@@ -90,7 +93,6 @@ public class GameStateController : MonoBehaviour
             Controller.Rim.SetActive(true);
             Controller.Defender.SetActive(true);
             Controller.GController.SetActive(true);
-            Controller.ShootBall.SetActive(false);
             // start 문자열을 표시
             Controller.gameStart.SetActive(true);
 
@@ -167,7 +169,6 @@ public class GameStateController : MonoBehaviour
             Controller.Rim.SetActive(false);
             Controller.ThreeptsAlarm.SetActive(false);
             Controller.Defender.SetActive(false);
-            Controller.ShootBall.SetActive(true);
             Controller.GameOverAudioSource.Play();
            
         }
@@ -196,6 +197,8 @@ public class GameStateController : MonoBehaviour
         {
             // 결과 표시
             Controller.result.SetActive(true);
+            Controller.Button.SetActive(true);
+            Controller.ShootBall.SetActive(true);
             float Total = GameObject.Find("Score").GetComponent<Score>().Points;
             if(Total >= 20.0f)
             {

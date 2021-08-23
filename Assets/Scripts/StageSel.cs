@@ -8,22 +8,22 @@ public class StageSel : MonoBehaviour
     public AudioSource StageSound;
     void OnTriggerEnter(Collider other)
     {
-        if(this.gameObject.name == "Stage1")
+        if(this.gameObject.name == "TouchPoint1")
         {
             StageSound.Play();
             Invoke("Stage1", 0.5f);
         }
-        if (this.gameObject.name == "Stage2")
+        if (this.gameObject.name == "TouchPoint2")
         {
             StageSound.Play();
             Invoke("Stage2", 0.5f);
         }
-        if (this.gameObject.name == "Stage3")
+        if (this.gameObject.name == "TouchPoint3")
         {
             StageSound.Play();
             Invoke("Stage3", 0.5f);
         }
-        if (this.gameObject.name == "Return")
+        if (this.gameObject.name == "TouchPoint4")
         {
             StageSound.Play();
             Invoke("Return1", 0.5f);
@@ -45,5 +45,4 @@ public class StageSel : MonoBehaviour
     {
         SceneManager.LoadScene("Title");
     }
-
 }
