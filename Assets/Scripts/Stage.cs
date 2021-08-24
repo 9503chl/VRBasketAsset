@@ -23,6 +23,7 @@ public class Stage : MonoBehaviour
             StageSound.Play();
             Invoke("NextStage", 0.5f);
         }
+        
     }
     void Retry()
     {

@@ -17,10 +17,12 @@ public class ControllerInput : MonoBehaviour
         {
             ShootBall();
         }
+#if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
         {
             ShootBall();
         }
+#endif
     }
     void ShootBall()
     {
