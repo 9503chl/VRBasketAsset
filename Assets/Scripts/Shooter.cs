@@ -9,7 +9,9 @@ public class Shooter : MonoBehaviour
 
     void Update()
     {
+#if UNITY_EDITOR
         if (Input.GetButtonDown("Fire1")) Shoot();
+#endif
         if ((OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))) Shoot();
     }
     void Shoot()

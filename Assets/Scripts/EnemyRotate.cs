@@ -17,7 +17,7 @@ public class EnemyRotate : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.forward * 0.0085f); //가는방향
+        transform.Translate(Vector3.forward * 0.00085f); //가는방향
         time -= Time.deltaTime;
         transform.LookAt(targetTransform);
         float eDistance = (targetTransform.position - transform.position).sqrMagnitude;
