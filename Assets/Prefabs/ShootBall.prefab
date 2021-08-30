@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3368217538094915521}
   - component: {fileID: 3769612169211201831}
   - component: {fileID: 7058900812841895319}
-  - component: {fileID: 3250321721327764545}
+  - component: {fileID: 6131486721534915484}
   m_Layer: 13
   m_Name: ShootBall
   m_TagString: Untagged
@@ -77,7 +77,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b77587aa971da3e4885c23204227d2cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3250321721327764545
+--- !u!114 &6131486721534915484
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

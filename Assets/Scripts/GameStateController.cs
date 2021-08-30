@@ -12,7 +12,7 @@ public class GameStateController : MonoBehaviour
     [SerializeField] GameObject player;     // PlayerGun 게임 오브젝트 참조
     [SerializeField] GameObject GoalDae;
     [SerializeField] GameObject Button;
-    [SerializeField] GameObject ShootBall;
+    [SerializeField] GameObject Hands; //게임끝난후 발사하는 공위치
     [SerializeField] GameObject Rim;
     [SerializeField] GameObject Defender;
     [SerializeField] GameObject ThreeptsAlarm;
@@ -56,7 +56,7 @@ public class GameStateController : MonoBehaviour
             Controller.Rim.SetActive(false);
             Controller.ThreeptsAlarm.SetActive(false);
             Controller.ReadyAudioSource.Play();
-            Controller.ShootBall.SetActive(false);
+            Controller.Hands.SetActive(false);
             Controller.Button.SetActive(false);
         }
         public override StateAction OnUpdate()
@@ -195,7 +195,7 @@ public class GameStateController : MonoBehaviour
             // 결과 표시
             Controller.result.SetActive(true);
             Controller.Button.SetActive(true);
-            Controller.ShootBall.SetActive(true);
+            Controller.Hands.SetActive(true);
             float Total = GameObject.Find("Score").GetComponent<Score>().Points;
             if(Total >= 20.0f)
             {
