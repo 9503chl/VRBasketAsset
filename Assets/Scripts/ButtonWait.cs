@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ButtonWait : MonoBehaviour
 {
-    float time = 2.0f;
+    float time = 2.7f;
     public GameObject button1;
     void Update()
     {

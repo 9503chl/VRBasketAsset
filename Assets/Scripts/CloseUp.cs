@@ -6,7 +6,6 @@ using DG.Tweening;
 [RequireComponent(typeof(RectTransform))]
 public class CloseUp : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         var rectTranform = GetComponent<RectTransform>();
