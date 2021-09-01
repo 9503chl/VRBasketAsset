@@ -11,22 +11,22 @@ public class StageSel : MonoBehaviour
         if(this.gameObject.name == "TouchPoint1")
         {
             StageSound.Play();
-            Invoke("Stage1", 0.5f);
+            Invoke("Stage1", 0.9f);
         }
         if (this.gameObject.name == "TouchPoint2")
         {
             StageSound.Play();
-            Invoke("Stage2", 0.5f);
+            Invoke("Stage2", 0.9f);
         }
         if (this.gameObject.name == "TouchPoint3")
         {
             StageSound.Play();
-            Invoke("Stage3", 0.5f);
+            Invoke("Stage3", 0.9f);
         }
         if (this.gameObject.name == "TouchPoint4")
         {
             StageSound.Play();
-            Invoke("Return1", 0.5f);
+            Invoke("Return1", 0.9f);
         }
     }
     void Stage1()

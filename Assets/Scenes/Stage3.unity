@@ -883,6 +883,16 @@ PrefabInstance:
       propertyPath: gameTime
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 6233025952011898756, guid: f41d1bfdd726f0843b8995b586934025,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ad90c97bf22a58d489d7841ec5097c3e, type: 3}
+    - target: {fileID: 6233025952011898758, guid: f41d1bfdd726f0843b8995b586934025,
+        type: 3}
+      propertyPath: m_Text
+      value: "BGM : \uC804\uC6B0\uCE58 \uBE4C\uB529 \uC232\uC18D\uC5D0\uC11C"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f41d1bfdd726f0843b8995b586934025, type: 3}
 --- !u!1 &1761826095 stripped

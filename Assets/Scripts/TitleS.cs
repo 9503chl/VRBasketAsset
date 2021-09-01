@@ -12,12 +12,12 @@ public class TitleS : MonoBehaviour
         if(this.gameObject.name == "TouchPoint1")
         {
             TitleSound.Play();
-            Invoke("StartG", 0.5f);
+            Invoke("StartG", 0.9f);
         }
         if (this.gameObject.name == "TouchPoint2")
         {
             TitleSound.Play();
-            Invoke("QuitG", 0.5f);
+            Invoke("QuitG", 0.9f);
         }
     }
     void StartG()
