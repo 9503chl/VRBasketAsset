@@ -10,6 +10,7 @@ public class SelectDoT : MonoBehaviour
     // Update is called once per frame
     void Start()
     {
-        text1.DOText("Select Stage", 1.0f);
+        text1.DOText("Select Stage", 2.0f);
     }
+
 }
