@@ -1001,6 +1001,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VRCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 5333104718467847355, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: hands
+      value: 
+      objectReference: {fileID: 2008535891}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 086cb98d2f69dd24b8eaee10239df060, type: 3}
 --- !u!1 &1226592393 stripped
@@ -1186,6 +1191,12 @@ GameObject:
 --- !u!1 &2008535890 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5333104717679638861, guid: 086cb98d2f69dd24b8eaee10239df060,
+    type: 3}
+  m_PrefabInstance: {fileID: 1218259178}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2008535891 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5333104717679638850, guid: 086cb98d2f69dd24b8eaee10239df060,
     type: 3}
   m_PrefabInstance: {fileID: 1218259178}
   m_PrefabAsset: {fileID: 0}

@@ -7,7 +7,7 @@ public class ControllerInput : MonoBehaviour
 
     public GameObject ShootingBall;
     public Transform firePos;
-
+    public GameObject Hand1,OnHand;
     // Start is called before the first frame update
 
     // Update is called once per frame
@@ -17,6 +17,7 @@ public class ControllerInput : MonoBehaviour
         {
             ShootBall();
         }
+        //if (gameObject.transform.eulerAngles)
 #if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
         {

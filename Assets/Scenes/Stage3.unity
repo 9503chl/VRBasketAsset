@@ -611,10 +611,32 @@ PrefabInstance:
       propertyPath: m_BackGroundColor.r
       value: 0.019607844
       objectReference: {fileID: 0}
+    - target: {fileID: 5333104717664547510, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: m_model
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: f36ed852fefb4b44d880b410b46b419c,
+        type: 3}
     - target: {fileID: 5333104717813909797, guid: 086cb98d2f69dd24b8eaee10239df060,
         type: 3}
       propertyPath: m_Name
       value: VRCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333104718709426846, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333104719121712685, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: m_model
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: f36ed852fefb4b44d880b410b46b419c,
+        type: 3}
+    - target: {fileID: 5333104719151782184, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 086cb98d2f69dd24b8eaee10239df060, type: 3}
