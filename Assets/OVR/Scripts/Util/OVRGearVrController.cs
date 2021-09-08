@@ -31,10 +31,11 @@ public class OVRGearVrController : MonoBehaviour
 	/// The root GameObject that should be conditionally enabled depending on controller connection status.
 	/// </summary>
     public GameObject m_model;
+    public GameObject Hand1, OnHand;
 
-	/// <summary>
-	/// The controller that determines whether or not to enable rendering of the controller model.
-	/// </summary>
+    /// <summary>
+    /// The controller that determines whether or not to enable rendering of the controller model.
+    /// </summary>
     public OVRInput.Controller m_controller;
 
     private bool m_prevControllerConnected = false;
@@ -54,6 +55,16 @@ public class OVRGearVrController : MonoBehaviour
         if (!controllerConnected)
         {
             return;
+        }
+        if (gameObject.transform.rotation.eulerAngles.x >= 10.0f)
+        {
+            Hand1.SetActive(false);
+            OnHand.SetActive(true);
+        }
+        else
+        {
+            Hand1.SetActive(true);
+            OnHand.SetActive(false);
         }
     }
 }
