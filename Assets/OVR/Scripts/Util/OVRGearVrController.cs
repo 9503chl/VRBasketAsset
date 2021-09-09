@@ -56,7 +56,7 @@ public class OVRGearVrController : MonoBehaviour
         {
             return;
         }
-        if (gameObject.transform.rotation.eulerAngles.x >= 10.0f)
+        if (gameObject.transform.position.y >= 1.3f)
         {
             Hand1.SetActive(false);
             OnHand.SetActive(true);

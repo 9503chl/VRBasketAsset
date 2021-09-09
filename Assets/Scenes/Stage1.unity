@@ -1135,6 +1135,11 @@ PrefabInstance:
       objectReference: {fileID: 5333104719103101499}
     - target: {fileID: 5333104717703921906, guid: 086cb98d2f69dd24b8eaee10239df060,
         type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5333104717703921906, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
@@ -1183,6 +1188,12 @@ PrefabInstance:
       propertyPath: ballPrefabs
       value: 
       objectReference: {fileID: 3466700082221470228, guid: ea2f265295e82a242bc9fa5b27853185,
+        type: 3}
+    - target: {fileID: 5333104718467847355, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: SballPrefabs
+      value: 
+      objectReference: {fileID: 6945246216048969709, guid: c16c0101015036040aad8719e1ee0c80,
         type: 3}
     - target: {fileID: 5333104718709426846, guid: 086cb98d2f69dd24b8eaee10239df060,
         type: 3}

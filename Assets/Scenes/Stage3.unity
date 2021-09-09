@@ -622,11 +622,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: VRCamera
       objectReference: {fileID: 0}
+    - target: {fileID: 5333104718467847355, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: hands
+      value: 
+      objectReference: {fileID: 739935499}
+    - target: {fileID: 5333104718467847355, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: ballPrefabs
+      value: 
+      objectReference: {fileID: 3466700082221470228, guid: ea2f265295e82a242bc9fa5b27853185,
+        type: 3}
+    - target: {fileID: 5333104718467847355, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: SballPrefabs
+      value: 
+      objectReference: {fileID: 6945246216048969709, guid: c16c0101015036040aad8719e1ee0c80,
+        type: 3}
     - target: {fileID: 5333104718709426846, guid: 086cb98d2f69dd24b8eaee10239df060,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5333104719121712685, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: Hand1
+      value: 
+      objectReference: {fileID: 739935496}
+    - target: {fileID: 5333104719121712685, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: OnHand
+      value: 
+      objectReference: {fileID: 739935495}
     - target: {fileID: 5333104719121712685, guid: 086cb98d2f69dd24b8eaee10239df060,
         type: 3}
       propertyPath: m_model
@@ -649,6 +676,24 @@ GameObject:
 --- !u!1 &739935494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5333104718467847354, guid: 086cb98d2f69dd24b8eaee10239df060,
+    type: 3}
+  m_PrefabInstance: {fileID: 739935492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &739935495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5305607852877130229, guid: 086cb98d2f69dd24b8eaee10239df060,
+    type: 3}
+  m_PrefabInstance: {fileID: 739935492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &739935496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1977289667520290727, guid: 086cb98d2f69dd24b8eaee10239df060,
+    type: 3}
+  m_PrefabInstance: {fileID: 739935492}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &739935499 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5333104717679638850, guid: 086cb98d2f69dd24b8eaee10239df060,
     type: 3}
   m_PrefabInstance: {fileID: 739935492}
   m_PrefabAsset: {fileID: 0}

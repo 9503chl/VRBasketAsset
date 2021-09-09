@@ -127,6 +127,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6233025952380540162}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &235956889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5305607852877130229, guid: 086cb98d2f69dd24b8eaee10239df060,
+    type: 3}
+  m_PrefabInstance: {fileID: 1218259178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &261911351 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6233025952405956149, guid: f41d1bfdd726f0843b8995b586934025,
@@ -525,6 +531,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c420539c4ed7fb8478fda7410ca698cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &696935745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1977289667520290727, guid: 086cb98d2f69dd24b8eaee10239df060,
+    type: 3}
+  m_PrefabInstance: {fileID: 1218259178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,6 +1018,28 @@ PrefabInstance:
       propertyPath: hands
       value: 
       objectReference: {fileID: 2008535891}
+    - target: {fileID: 5333104718467847355, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: ballPrefabs
+      value: 
+      objectReference: {fileID: 3466700082221470228, guid: ea2f265295e82a242bc9fa5b27853185,
+        type: 3}
+    - target: {fileID: 5333104718467847355, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: SballPrefabs
+      value: 
+      objectReference: {fileID: 6945246216048969709, guid: c16c0101015036040aad8719e1ee0c80,
+        type: 3}
+    - target: {fileID: 5333104719121712685, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: Hand1
+      value: 
+      objectReference: {fileID: 696935745}
+    - target: {fileID: 5333104719121712685, guid: 086cb98d2f69dd24b8eaee10239df060,
+        type: 3}
+      propertyPath: OnHand
+      value: 
+      objectReference: {fileID: 235956889}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 086cb98d2f69dd24b8eaee10239df060, type: 3}
 --- !u!1 &1226592393 stripped
