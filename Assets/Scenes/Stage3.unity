@@ -1429,6 +1429,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 397143079125287345, guid: fa21ce18438d56345b467504be334615,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1841201099383320131, guid: fa21ce18438d56345b467504be334615,
         type: 3}
       propertyPath: targetTransform
@@ -1444,6 +1449,31 @@ PrefabInstance:
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 1624635464}
+    - target: {fileID: 2523436083677084115, guid: fa21ce18438d56345b467504be334615,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523436083805521219, guid: fa21ce18438d56345b467504be334615,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2523436084241204937, guid: fa21ce18438d56345b467504be334615,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3812829464266524313, guid: fa21ce18438d56345b467504be334615,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542626363424240187, guid: fa21ce18438d56345b467504be334615,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 4542626363618778410, guid: fa21ce18438d56345b467504be334615,
         type: 3}
       propertyPath: m_RootOrder
@@ -1514,6 +1544,16 @@ PrefabInstance:
       propertyPath: targetTransform
       value: 
       objectReference: {fileID: 1624635464}
+    - target: {fileID: 4542626364228335105, guid: fa21ce18438d56345b467504be334615,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4542626364722782684, guid: fa21ce18438d56345b467504be334615,
+        type: 3}
+      propertyPath: m_Mass
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa21ce18438d56345b467504be334615, type: 3}
 --- !u!1001 &5028082466432957166
